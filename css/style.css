@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("/images/background.svg") no-repeat center;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.login-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  padding: 80 px 40px 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.form img {
+  position: relative;
+  align-content: center;
+  top: -50px;
+  left: calc(50% - 50px);
+  width: 100px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.form h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  color: #ff652f;
+}
+
+.form .input-group {
+  position: relative;
+}
+
+.form .input-group input {
+  width: 100%;
+  position: relative;
+  padding: 10 px 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+.form .input-group label {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  padding: 10px 0;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.3s ease-out;
+}
+
+.form .input-group input:focus + label,
+.form .input-group input:valid + label {
+  transform: translate(0, -18px);
+  color: #ff652f;
+  font-size: 0.8rem;
+}
+
+.submit-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  background: #ff652f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.forgot-pw {
+  color: inherit;
+}
+
+.forgot-pw:hover {
+  color: #ff652f;
+}
+
+#forgot-pw {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  z-index: 1;
+  background: #fff;
+  opacity: 0;
+  transition: 0.8s;
+  background: url("/images/background.svg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  text-decoration: none;
+}
+
+#forgot-pw:target {
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+}
+
+/* #reset {
+  position: relative;
+  top: 10px;
+} */
+
+.close {
+  position: absolute;
+  right: 1.5rem;
+  top: 0rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.close:hover {
+  font-size: 2rem;
+}
+
+.foot {
+  position: fixed;
+  opacity: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff652f;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.foot p {
+  font-weight: 1.5rem;
+}
+
+.foot a {
+  color: inherit;
+  font-size: 0.8rem;
+}
