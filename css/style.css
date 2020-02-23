@@ -5,8 +5,7 @@
 }
 
 body {
-  background: url('/home/kk/Documents/web development/loginPage using html and css/images/background.svg')
-    no-repeat center;
+  background: url('../images/background.svg') no-repeat center;
   background-size: cover;
   font-family: sans-serif;
 }
@@ -129,8 +128,7 @@ body {
   background: #fff;
   opacity: 0;
   transition: 0.8s;
-  background: url('/home/kk/Documents/web development/loginPage using html and css/images/background.svg')
-    no-repeat center;
+  background: url('../images/background.svg') no-repeat center;
   background-size: cover;
   color: #fff;
   text-decoration: none;
